@@ -10,3 +10,4 @@ runs:
   - name: abc
     id : id1 
     run: echo "var1=asif from composite action" >> $GITHUB_OUTPUT
+    shell: bash
