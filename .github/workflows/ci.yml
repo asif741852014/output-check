@@ -1,0 +1,12 @@
+name: jj
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: ls -larth
+    - name: pp
+      id: id11
+      uses: ./.github/actions/
+    - run: echo "checking output ${{ steps.id11.outputs.output1 }}"

@@ -1,0 +1,12 @@
+name: dd
+description: dd
+outputs:
+  output1:
+    description: dfd
+    value: ${{ steps.id1.outputs.var1 }}
+runs:
+  using: "composite"
+  steps:
+  - name: abc
+    id : id1 
+    run: echo "var1=asif from composite action" >> $GITHUB_OUTPUT
